@@ -1,6 +1,5 @@
 
-//const wdio = require('webdriverio');
-//const find = require('appium-flutter-finder');
+//test-script elaborado por jackelin marca - app notas
 
 import { remote } from 'webdriverio';
 import { byValueKey,byText } from 'appium-flutter-finder';
@@ -98,15 +97,3 @@ const options = {
         console.log('🔚 Sesión finalizada');
     }
 })();
-
-/*
-// ▶️ iniciar grabación
-await client.startRecordingScreen();
-
-// ⏹️ detener grabación y guardar
-const base64Video = await client.stopRecordingScreen();
-
-// guardamos el archivo en la carpeta videos/
-import fs from 'fs';
-const buffer = Buffer.from(base64Video, 'base64');
-fs.writeFileSync('./videos/test_cat.mp4', buffer); */
